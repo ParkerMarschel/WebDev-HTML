@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Project 3</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			<h1>Project 3</h1>
+			<h3>Please, fill in the form below for an account.</h3>
+			<h3>Required fields are marked with an asterisk.</h3>
+		</div>
+		
+		<div id="error-display">
+			<div id="required-field-error"></div>
+			<div id="passwordmismatch-error"></div>
+			<div id="unmet-password-confirmation-error"></div>
+			<div id="invalid-email-error"></div>
+		</div>
+		
+		<br>
+		
+		<form id="project-form" onfocusout="filled()">
+			UserName:<span> *</span><br>
+			<input type="text" id="userName" required>
+			<br>
+			
+			Name:<span> *</span><br>
+			<input type="text" id="name" required>
+			<br>
+			
+			Phonr-Number: <br>
+			<input type="number" id="phone-number"><br>
+			
+			Email:<span> *</span><br>
+			<input type="email" id="email" required><br>
+			
+			Password:<span> *</span><br>
+			<input type="password" id="password" required><br>
+			
+			Password-Confirmation:<span> *</span><br>
+			<input type="password" id="passwordCon" required><br>
+			
+			<button type="button" id="submit-btn" onclick="displayReg()">Submit</button>
+		</form>
+	</body>
+</html>
